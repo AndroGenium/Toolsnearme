@@ -1,3 +1,4 @@
+import { UserService } from './services/user-service';
 import { Component, signal } from '@angular/core';
 
 @Component({
@@ -8,4 +9,8 @@ import { Component, signal } from '@angular/core';
 })
 export class App {
   protected readonly title = signal('Toolsnearme');
+
+  constructor(private userService: UserService) {
+    this.userService.loadUserRole();
+  }
 }
