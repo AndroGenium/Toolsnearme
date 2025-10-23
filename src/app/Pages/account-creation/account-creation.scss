@@ -15,15 +15,24 @@ body {
     justify-content: center;
     padding: 20px;
 }
+main{
+    background: white;
+    border-radius: 12px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
 
 /* Register Container */
 .register-container {
     background: white;
     border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
     max-width: 460px;
     width: 100%;
-    padding: 40px;
+    padding: 0px;
+    margin: 40px;
 }
 
 /* Logo */
@@ -183,7 +192,7 @@ body {
     cursor: pointer;
     transition: all 0.2s ease;
     margin-top: 12px;
-    width: max-content  ;
+    width: 100%;
 }
 
 .btn-guest:hover {

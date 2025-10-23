@@ -20,8 +20,8 @@ body {
     background: white;
     border-radius: 12px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-    max-width: 460px;
-    width: 100%;
+    max-width: 560px; /* increased from 460px so the form isn't tiny on large viewports */
+    width: 70vw;
     padding: 40px;
 }
 
@@ -219,5 +219,99 @@ body {
         flex-direction: column;
         align-items: flex-start;
         gap: 12px;
+    }
+}
+
+@media (max-width: 360px) {
+    .signin-container {
+        padding: 24px 18px;
+        max-width: 320px;
+        border-radius: 10px;
+    }
+
+    .logo-icon {
+        width: 34px;
+        height: 34px;
+        font-size: 18px;
+    }
+
+    .logo-text {
+        font-size: 20px;
+    }
+
+    .signin-header h1 {
+        font-size: 20px;
+        margin-top: 12px;
+    }
+
+    .form-group input {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+
+    .btn-signin, .btn-guest {
+        padding: 12px;
+        font-size: 13px;
+    }
+
+    .form-options {
+        gap: 10px;
+    }
+
+    .signup-link {
+        padding-top: 18px;
+        margin-top: 18px;
+    }
+}
+
+/* Extra small: keep usable down to 300px width */
+@media (max-width: 300px) {
+    .signin-container {
+        padding: 18px 12px;
+        max-width: 280px;
+        border-radius: 8px;
+    }
+
+    .logo-icon {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+
+    .logo-text {
+        font-size: 18px;
+    }
+
+    .signin-header h1 {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .signin-header p {
+        font-size: 13px;
+    }
+
+    .form-group label {
+        font-size: 12px;
+    }
+
+    .form-group input {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+
+    .remember-me label, .forgot-password, .signup-link p {
+        font-size: 12px;
+    }
+
+    .btn-signin, .btn-guest {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .form-options {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
     }
 }
